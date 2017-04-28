@@ -12,9 +12,6 @@ void setup() {
   marf2 = new pajaro(250, 669, 32, 32);
   marf3 = new pajaro(350, 669, 32, 32);
   pato=loadImage("Untitled-2.png");
-  random=random(xr,yr);
-  yr=15;
-  xr=1265;
 }
 
 void draw() {

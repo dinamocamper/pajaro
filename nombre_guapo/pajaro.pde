@@ -22,6 +22,8 @@ class pajaro {
     if (y<0) {
       y=720;
     }
-    if(y<720){x=}
+    if (y<720) {
+      x=(int)random(0, 1280);
+    }
   }
 }
