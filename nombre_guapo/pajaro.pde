@@ -9,13 +9,18 @@ class pajaro {
     y = ey;
     w = ew;
     h = eh;
-    vel=random(-2,2);
+    vel=random(-2, 2);
   }
 
   void actualizar(int n) {
     //Creamos un método 'actualizar' para mover y pintar los enemigos.
     image(pato, x, y, w, h);
     y=y-n;
-    if(x<0){vel=vel*-1}
+    if (y<0) {
+      vel=vel*-1;
+    }
+    if (y<760) {
+      y=0;
+    }
   }
 }
