@@ -1,7 +1,5 @@
 PImage pato;
 int random;
-float yr;
-float xr;
 // Creamos objetos de tipo Enemigo
 pajaro marf, marf2, marf3, marf4;
 

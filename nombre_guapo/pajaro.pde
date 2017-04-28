@@ -1,15 +1,15 @@
 class pajaro {
   //Declaramos la clase 'Enemigo' con tres propiedades
   int x, y, w, h;
-  float vel;
-
+  float vely;
+  float velx;
   pajaro(int ex, int ey, int ew, int eh) {
     //Creamos un constructor con el mismo nombre de la clase y le pasamos sus parámetros
     x = ex;
     y = ey;
     w = ew;
     h = eh;
-    vel=random(-2, 2);
+    vely=random(-2, 2);
   }
 
   void actualizar(int n) {
@@ -17,12 +17,12 @@ class pajaro {
     image(pato, x, y, w, h);
     y=y-n;
     if (y<720) {
-      vel=vel*-1;
+      vely=vely*-1;
     }
     if (y<0) {
-      y=720;
+      y=725;
     }
-    if (y<720) {
+    if (y>720) {
       x=(int)random(0, 1280);
     }
   }
