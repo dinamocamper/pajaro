@@ -22,5 +22,6 @@ class pajaro {
     if (y<0) {
       y=720;
     }
+    if(y<720){x=}
   }
 }
