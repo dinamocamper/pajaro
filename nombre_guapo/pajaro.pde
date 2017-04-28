@@ -16,11 +16,11 @@ class pajaro {
     //Creamos un método 'actualizar' para mover y pintar los enemigos.
     image(pato, x, y, w, h);
     y=y-n;
-    if (y<0) {
+    if (y<720) {
       vel=vel*-1;
     }
-    if (y<760) {
-      y=0;
+    if (y<0) {
+      y=720;
     }
   }
 }
