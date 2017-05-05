@@ -25,5 +25,11 @@ class pajaro {
       vely=random(-7, 0);
       velx=random(-5, 5);
     }
+      if (x<0) {
+      x=1280;
+    }
+     if (x>1280) {
+      x=0;
+    }
   }
 }
