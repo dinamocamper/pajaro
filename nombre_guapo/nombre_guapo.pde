@@ -16,7 +16,7 @@ void draw() {
   image(pato, 500, 300, 50, 50);
   background(#476EB9);
   //Llamamos a la función actualizar de los Enemigos
-  marf.actualizar(2);
-  marf2.actualizar(2);
-  marf3.actualizar(2);
+  marf.actualizar();
+  marf2.actualizar();
+  marf3.actualizar();
 }
